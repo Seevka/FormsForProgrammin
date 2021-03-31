@@ -22,7 +22,6 @@ namespace FormsForProgrammin
         int[,] resultMatrix;
         const string firstMatrixFilePath = @"C:\Users\Sevka\source\repos\FormsForProgrammin\FormsForProgrammin\firstMatrix.txt";
         const string secondMatrixFilePath = @"C:\Users\Sevka\source\repos\FormsForProgrammin\FormsForProgrammin\SecondMatrix.txt";
-        const char Seperator = ' ';
         public Form3()
         {
             InitializeComponent();
@@ -102,7 +101,6 @@ namespace FormsForProgrammin
         {
             label1.Text = "+";
             label1.Font = new Font(label1.Font.FontFamily, 20);
-            this.label1.Location = new Point(379,120);
             countMatrix();
 
             for (int i = 0; i < firstMatrix.GetLength(0); i++)
@@ -119,7 +117,6 @@ namespace FormsForProgrammin
         {
             label1.Text = "-";
             label1.Font = new Font(label1.Font.FontFamily, 20);
-            this.label1.Location = new Point(379, 120);
             countMatrix();
 
             for (int i = 0; i < firstMatrix.GetLength(0); i++)
@@ -136,7 +133,6 @@ namespace FormsForProgrammin
         {
             label1.Text = "*";
             label1.Font = new Font(label1.Font.FontFamily, 20);
-            this.label1.Location = new Point(379, 120);
             countMatrix();
 
             for (int i = 0; i < firstMatrix.GetLength(0); i++)
@@ -325,6 +321,16 @@ namespace FormsForProgrammin
             {
                 this.Close();
             }
+        }
+
+        private void Form3_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     } 
 

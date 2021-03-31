@@ -19,12 +19,17 @@ namespace FormsForProgrammin
             this.FormClosing += new FormClosingEventHandler(Form2_Closing);
             textBox1.KeyPress += new KeyPressEventHandler(txtHomePhone_KeyPress);
             textBox2.KeyPress += new KeyPressEventHandler(txtHomePhone_KeyPress);
+            this.textBox1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtYourTextBox_KeyDown);
+            this.textBox2.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtYourTextBox_KeyDown);
+            textBox1.Text = textBox1.Text.Replace(Environment.NewLine, "");
+            textBox2.Text = textBox2.Text.Replace(Environment.NewLine, "");
             toolStripMenuItem6.DisplayStyle = ToolStripItemDisplayStyle.ImageAndText;
             toolStripMenuItem7.DisplayStyle = ToolStripItemDisplayStyle.Text;
             toolStripMenuItem8.DisplayStyle = ToolStripItemDisplayStyle.Text;
             redToolStripMenuItem.DisplayStyle = ToolStripItemDisplayStyle.ImageAndText;
             blueToolStripMenuItem.DisplayStyle = ToolStripItemDisplayStyle.Text;
             yellowToolStripMenuItem.DisplayStyle = ToolStripItemDisplayStyle.Text;
+
             this.BackColor = Color.Red;
             label1.Font = new Font(label1.Font.FontFamily, 8);
             label2.Font = new Font(label1.Font.FontFamily, 8);
@@ -32,30 +37,21 @@ namespace FormsForProgrammin
         }
         public class CustomCheckBox : CheckBox
         {
-            public CustomCheckBox()
-            {
-                this.SetStyle(ControlStyles.UserPaint, true);
-                this.SetStyle(ControlStyles.AllPaintingInWmPaint, true);
-            }
 
-            protected override void OnPaint(PaintEventArgs pevent)
-            {
-                base.OnPaint(pevent);
-                if (this.Checked)
-                {
-                    pevent.Graphics.FillRectangle(new SolidBrush(Color.Blue), new Rectangle(0, 0, 16, 16));
-                }
-                else
-                {
-                    pevent.Graphics.FillRectangle(new SolidBrush(Color.Red), new Rectangle(0, 0, 16, 16));
-                }
-            }
+
         }
 
         private void Form2_Load(object sender, EventArgs e)
         {
 
         }
+
+        private void txtYourTextBox_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+                e.SuppressKeyPress = true;
+        }
+
         private void Form2_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
                 if (MessageBox.Show("The window will be closed. Are u sure?", "Confirm the action",
@@ -136,8 +132,6 @@ namespace FormsForProgrammin
             textBox3.Text = "";
             label2.Text = "";
         }
-
-
 
 
         private void exitF10ToolStripMenuItem_Click(object sender, EventArgs e)
