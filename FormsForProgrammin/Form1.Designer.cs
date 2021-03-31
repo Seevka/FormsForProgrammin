@@ -36,6 +36,7 @@ namespace FormsForProgrammin
             // 
             // button1
             // 
+            this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button1.Location = new System.Drawing.Point(12, 49);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(118, 55);
@@ -46,15 +47,18 @@ namespace FormsForProgrammin
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(12, 505);
+            this.button5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button5.Location = new System.Drawing.Point(568, 49);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(118, 55);
             this.button5.TabIndex = 4;
             this.button5.Text = "Матриці";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button6
             // 
+            this.button6.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button6.Location = new System.Drawing.Point(568, 505);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(118, 55);

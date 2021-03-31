@@ -620,7 +620,7 @@ namespace FormsForProgrammin
             this.DoubleBuffered = true;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form2";
-            this.Text = "FormClosing";
+            this.Text = "Form1,2,4,7";
             this.Load += new System.EventHandler(this.Form2_Load);
             this.contextMenuStrip1.ResumeLayout(false);
             this.contextMenuStrip1.PerformLayout();
