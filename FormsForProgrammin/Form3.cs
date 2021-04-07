@@ -25,6 +25,7 @@ namespace FormsForProgrammin
         public Form3()
         {
             InitializeComponent();
+            this.FormClosing += new FormClosingEventHandler(Form2_Closing);
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -326,6 +327,20 @@ namespace FormsForProgrammin
         private void Form3_Load(object sender, EventArgs e)
         {
 
+        }
+        private void Form2_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            if (MessageBox.Show("The window will be closed. Are u sure?", "Confirm the action",
+               MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                // Cancel the Closing event from closing the form.
+                e.Cancel = false;
+            }
+            else
+            {
+                e.Cancel = true;
+
+            }
         }
 
         private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)

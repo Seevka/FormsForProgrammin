@@ -118,8 +118,9 @@ namespace FormsForProgrammin
             // 
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label4.Location = new System.Drawing.Point(348, 444);
+            this.label4.Location = new System.Drawing.Point(333, 444);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(97, 25);
             this.label4.TabIndex = 6;
