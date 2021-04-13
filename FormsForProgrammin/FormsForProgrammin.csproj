@@ -53,6 +53,30 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form10.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form10.Designer.cs">
+      <DependentUpon>Form10.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form11.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form11.Designer.cs">
+      <DependentUpon>Form11.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form12.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form12.Designer.cs">
+      <DependentUpon>Form12.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form13.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form13.Designer.cs">
+      <DependentUpon>Form13.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form2.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -106,6 +130,18 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form10.resx">
+      <DependentUpon>Form10.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form11.resx">
+      <DependentUpon>Form11.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form12.resx">
+      <DependentUpon>Form12.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form13.resx">
+      <DependentUpon>Form13.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.cs</DependentUpon>
     </EmbeddedResource>
@@ -154,17 +190,22 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="03fd284948387458641483ef58822e3c.png" />
     <Content Include="1531304973_mops-charachter.jpg" />
     <Content Include="2 %281%29.jpg" />
     <Content Include="2.jpg" />
     <Content Include="3.jpg" />
     <Content Include="59518 %281%29.jpg" />
     <Content Include="Degaen.jpg" />
+    <Content Include="dot.png" />
     <Content Include="firstMatrix.txt" />
     <Content Include="Football_iu_1996.jpg" />
+    <Content Include="hour.png" />
     <Content Include="labrador.jpg" />
+    <Content Include="minute.png" />
     <Content Include="oruzhie-v-cs-go-dlja-novichkov_15984739751481578711.jpg" />
     <Content Include="photo_2021-03-30_20-35-17-removebg-preview.png" />
+    <Content Include="second.png" />
     <Content Include="SecondMatrix.txt" />
     <Content Include="Spike_Skin-Default.png" />
     <Content Include="unnamed.jpg" />

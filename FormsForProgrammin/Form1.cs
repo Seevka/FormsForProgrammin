@@ -87,5 +87,33 @@ namespace FormsForProgrammin
             frm9.Activate();
             frm9.Show();
         }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            Form10 frm10 = new Form10();
+            frm10.Activate();
+            frm10.Show();
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            Form11 frm11 = new Form11();
+            frm11.Activate();
+            frm11.Show();
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            Form12 frm12 = new Form12();
+            frm12.Activate();
+            frm12.Show();
+        }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+            Form13 frm13 = new Form13();
+            frm13.Activate();
+            frm13.Show();
+        }
     }
 }

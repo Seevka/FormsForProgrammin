@@ -233,14 +233,15 @@ namespace FormsForProgrammin
             this.toolStripTextBox3,
             this.exitF10ToolStripMenuItem1});
             this.contextMenuStrip1.Name = "contextMenuStrip3";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(161, 164);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(181, 186);
+            this.contextMenuStrip1.Opening += new System.ComponentModel.CancelEventHandler(this.contextMenuStrip1_Opening);
             // 
             // windowStateToolStripMenuItem1
             // 
             this.windowStateToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.maximizedToolStripMenuItem});
             this.windowStateToolStripMenuItem1.Name = "windowStateToolStripMenuItem1";
-            this.windowStateToolStripMenuItem1.Size = new System.Drawing.Size(160, 22);
+            this.windowStateToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.windowStateToolStripMenuItem1.Text = "&WindowState";
             // 
             // maximizedToolStripMenuItem
@@ -269,7 +270,7 @@ namespace FormsForProgrammin
             this.toolStripTextBox5,
             this.toolStripTextBox6});
             this.viewToolStripMenuItem3.Name = "viewToolStripMenuItem3";
-            this.viewToolStripMenuItem3.Size = new System.Drawing.Size(160, 22);
+            this.viewToolStripMenuItem3.Size = new System.Drawing.Size(180, 22);
             this.viewToolStripMenuItem3.Text = "&View   >";
             // 
             // form1BackgroundToolStripMenuItem
@@ -353,7 +354,7 @@ namespace FormsForProgrammin
             this.button2ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.textDivideToolStripMenuItem});
             this.button2ToolStripMenuItem.Name = "button2ToolStripMenuItem";
-            this.button2ToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
+            this.button2ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.button2ToolStripMenuItem.Text = "Button2";
             // 
             // textDivideToolStripMenuItem
@@ -378,7 +379,7 @@ namespace FormsForProgrammin
             // 
             this.exitF10ToolStripMenuItem1.Name = "exitF10ToolStripMenuItem1";
             this.exitF10ToolStripMenuItem1.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.F10)));
-            this.exitF10ToolStripMenuItem1.Size = new System.Drawing.Size(160, 22);
+            this.exitF10ToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.exitF10ToolStripMenuItem1.Text = "E&xit";
             this.exitF10ToolStripMenuItem1.Click += new System.EventHandler(this.exitF10ToolStripMenuItem1_Click);
             // 
@@ -396,7 +397,7 @@ namespace FormsForProgrammin
             // 
             this.exitF10ToolStripMenuItem.Name = "exitF10ToolStripMenuItem";
             this.exitF10ToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.F10)));
-            this.exitF10ToolStripMenuItem.Size = new System.Drawing.Size(145, 22);
+            this.exitF10ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.exitF10ToolStripMenuItem.Text = "E&xit";
             this.exitF10ToolStripMenuItem.Click += new System.EventHandler(this.exitF10ToolStripMenuItem_Click);
             // 
